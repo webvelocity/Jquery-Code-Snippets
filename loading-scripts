@@ -1,0 +1,8 @@
+/* Run function only on JQUery Load */
+<script defer>
+(function ($) {
+
+// Your Code 
+
+})(jQuery);
+</script>
