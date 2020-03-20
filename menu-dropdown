@@ -1,0 +1,14 @@
+<li class="menu-item"><a href="#">LOANS</a>
+	<ul class="sub-menu">
+		<li  class="menu-item"><a
+				href="">Cash Advance</a></li>
+	</ul>
+</li>
+
+jQuery(document).ready(function (e) {
+    e(".menu-item a").click(function () {
+        e(this).closest("li").children("ul").length;
+         e(this).closest("li").children("ul").toggleClass("active");
+          e(this).closest("li").children("ul").slideToggle(300);
+    });
+});
