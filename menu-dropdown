@@ -12,3 +12,21 @@ jQuery(document).ready(function (e) {
           e(this).closest("li").children("ul").slideToggle(300);
     });
 });
+
+
+//MENU 2 Highlighting the Current item
+var loc = window.location.href;
+//Sublists Highlight
+$(".nav li ul a").each(function() {
+    if(this.href == loc) {
+        el= $(this).closest("ul");
+        el.prev().addClass('active');
+        console.log(el)
+    }
+});
+//Without sublists Highlight
+$(".nav li a").not( $( "nav li ul a" )).each(function() {
+    if(this.href == loc) {
+        $(this).addClass('active');
+    }
+});
